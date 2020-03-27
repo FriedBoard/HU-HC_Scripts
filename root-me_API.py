@@ -1,7 +1,10 @@
 '''
-   Version: 0.2
+   Version: 0.3
    Author: Leroy van der Steenhoven
    
+   Description:
+        This script will get the Root-Me points, rank and challenges completed for the users in "members"
+
     You'll need the following:
         Python 3.x
         Requests            pip3 install requests
