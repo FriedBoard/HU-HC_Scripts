@@ -1,7 +1,7 @@
 '''
    Version: 0.3
    Author: Leroy van der Steenhoven
-   
+
    Description:
         This script will get the Root-Me points, rank and challenges completed for the users in "members"
 
@@ -18,7 +18,7 @@ import time
 import datetime
 
 # Members for which you want scores
-members = ['pve', 'Aadsterken', 'netmin', 'lazydoe99', 'Ferran-Tufan']
+members = ['pve', 'Aadsterken', 'netmin', 'lazydoe99', 'Ferran-Tufan', 'bulluk', 'BacVic', 'arriver']
 
 # URLs needed
 ranking_URL = 'https://www.root-me.org/'
@@ -41,8 +41,8 @@ for member in members:
     profile = requests.get(str(ranking_URL + str(member) + '?lang=en'))
 
     # Parse the HTML using beautifulsoup4
-    soup =  BeautifulSoup(profile.content, 'html.parser')  
-    
+    soup =  BeautifulSoup(profile.content, 'html.parser')
+
     # The page lacks proper ID's so get all h3 elements
     elements = soup.find_all('h3')
 
