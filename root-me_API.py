@@ -68,4 +68,4 @@ for member in members:
     score_Table.add_row(member_Stats)
 
 # Print results
-print(score_Table)
+print(score_Table.get_string(sortby="Points"))
